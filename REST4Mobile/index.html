@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RESTful Client</title>
+
+<!--  Use JQuery and Drag and Drop features -->
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/drag-drop-custom.js"></script>
+<script type="text/javascript" src="js/mulsemedia.js"></script>
+
+</head>
+ 
+<body>
+	<div id="allContent">
+	 
+	<div id="myExample">
+	 <form id="frmRest">
+	  <fieldset>
+	   <legend>Please enter item category and the RESTful services you want to use.</legend>
+	  	<p align='right'> 
+	  		<a href='javascript:void' onClick="alert('Please enter the host address, and source (and destination) URIs of client (s). If you want to add more clients, please push the “Add” and “Remove” to clear the textbox; push the “Create” button to complete, and then items along with check boxes will be listed down the window. Finally, tick on the items you want to bid for and push the “Submit” button. ')">Tip?</a>
+	  	</p>
+	    <p>
+	    	<label for="itemCategory">Category:</label>
+	    </p>
+	    <p>
+	    	<input id="itemCategory" type="text" name="itemCategory" placeholder="Enter Item Category like Wheat or Banana, or All " size="60"/>
+	    </p>
+
+	    <label for="uri1">RESTful service APIs (URLs):</label>
+   	    <div >
+            <a id="site1" href="http://10.0.2.2:8080/demand/product/001">Site 1</a>|
+            <a id="site2" href="http://10.0.2.2:8080/demand/product/002">Site 2</a>| ...
+        </div>	        
+	    <input id="uri1" type="text" name="uri1" placeholder="Type Android localhost - http://10.0.2.2:8080/uri" size="60"/> 
+	    
+	    <p>More APIs? </p>
+	    <p>Please click <a href="javascript:addElement();" >add</a> or <a href="javascript:removeElement();" >remove</a>.</p>
+	    <div id="content"></div>  
+	     
+	    <p>
+	     <input id="btnCreate" type="button" value="Create" />
+	    </p>
+	  </fieldset>
+	 </form>
+	 <div id="anotherSection">
+	  <fieldset>
+	   	<legend align="center">Query result from different sources:</legend>
+	    <div id="ajaxResponse"></div>
+	  	<p align="center"><input id="btnSubmit" type="button" value="Submit"/></p>
+	  </fieldset>  
+	 </div>
+	</div>
+	  
+	</div>  
+	<script>
+		//HTML5 Drag and Drop functions
+		function drop(idOfDraggedItem,targetId,x,y)
+		{
+			var html = document.getElementById(idOfDraggedItem).innerHTML;   	
+			html = html + document.getElementById(idOfDraggedItem).innerHTML;
+			document.getElementById(idOfDraggedItem).innerHTML = html;
+		} 
+		var dragDropObj = new DHTMLgoodies_dragDrop();
+		
+		dragDropObj.addSource('site1',true);		
+		dragDropObj.addSource('site2',true);	
+		
+		dragDropObj.init();
+	</script>    
+</body>
+</html>
