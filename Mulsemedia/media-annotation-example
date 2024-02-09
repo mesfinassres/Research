@@ -1,0 +1,98 @@
+[
+	{
+		"seektime": 5,
+		"olfaction":{
+			"scent": "SCENT_1",
+			"duration":10,
+			"intensity":10
+		},
+		"haptic":{
+			"pattern": [
+			  {
+				"type": "custom",
+				"length-ms": 500
+			  }
+			],
+			"rate": {
+			  "frequency": 0
+			}
+		},
+		"wind":{
+			"port": "COM4",
+			"duration":8,
+			"intensity":150
+		}
+	},
+	{
+		"seektime": 19,
+		"olfaction":{
+			"scent": "SCENT_2",
+			"duration":10,
+			"intensity":10
+		},
+		"haptic":{
+			"pattern": [
+			  {
+				"type": "custom",
+				"length-ms": 500
+			  }
+			],
+			"rate": {
+			  "frequency": 0
+			}
+		},
+		"wind":{
+			"port": "COM4",
+			"duration":8,
+			"intensity":150
+		}
+	},
+	{
+		"seektime": 31,
+		"olfaction":{
+			"scent": "SCENT_3",
+			"duration":10,
+			"intensity":10
+		},
+		"haptic":{
+			"pattern": [
+			  {
+				"type": "custom",
+				"length-ms": 500
+			  }
+			],
+			"rate": {
+			  "frequency": 0
+			}
+		},
+		"wind":{
+			"port": "COM4",
+			"duration":8,
+			"intensity":150
+		}
+	},
+	{
+		"seektime": 45,
+		"olfaction":{
+			"scent": "SCENT_3",
+			"duration":10,
+			"intensity":10
+		},
+		"haptic":{
+			"pattern": [
+			  {
+				"type": "custom",
+				"length-ms": 500
+			  }
+			],
+			"rate": {
+			  "frequency": 0
+			}
+		},
+		"wind":{
+			"port": "COM4",
+			"duration":8,
+			"intensity":150
+		}
+	}	
+]

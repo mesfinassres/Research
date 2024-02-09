@@ -1,0 +1,60 @@
+/*
+ * --------------------------------------------------------------------------------------------------------------
+ * -	Brunel University London & Dublin City University														-
+ * -	H2020 NEWTON Project		       																		-
+ * -	A Mulseplayer that uses Exhalia & RIVAL 700 haptic mouse 												-
+ * -	for rendering mulsemedia effects on the Web										       					-
+ * -	2017																									-
+ * -	Version 2.0																								-
+ * --------------------------------------------------------------------------------------------------------------
+ */
+body {
+	font-family: "Lato", sans-serif; 
+	padding: 5% 15%; 
+	width: 70%;
+	//background: #555;
+}
+.content {
+    max-width: 1500px;
+    margin: auto;
+    background: #ffC;
+    padding: 10px;
+	font-size: 25px;
+	border: 1px solid #ddd;
+}
+video {
+	width: 1025px;
+	heght: 600px;
+	border: 1px solid #ddd;
+	max-width: 100%;
+	min-width: 100%;
+}
+form {
+	margin: 0;	
+	padding: 1em 1em;
+	border: 1px solid #ddd;
+	background: #C0C0C0;
+}
+img {
+	border: 0px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 400px;
+	max-width:50%;
+}
+img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+select {
+  width: 25%;
+  font-size: 25px;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
